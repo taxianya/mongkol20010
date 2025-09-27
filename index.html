@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TAXI ON TOUR</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    /* ปุ่ม 3 ขีด */
+    .menu-toggle {
+        background: #2d8a3d;
+        border: none;
+        padding: 12px;
+        cursor: pointer;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        z-index: 1000;
+        border-radius: 5px;
+    }
+    .menu-toggle div {
+        width: 25px;
+        height: 3px;
+        background: white;
+        margin: 5px 0;
+    }
+
+    /* พื้นหลัง PopUp */
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background: #f0fff4;
+        color: black;
+        transition: 0.4s;
+        z-index: 999;
+        text-align: center;
+        padding-top: 80px;
+    }
+    .menu.active {
+        right: 0;
+    }
+
+    /* ปุ่มปิด */
+    .menu .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: #2d8a3d;
+        color: white;
+        border: none;
+        font-size: 20px;
+        padding: 5px 12px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    /* ลิสต์เมนู */
+    .menu ul {
+        list-style: none;
+        padding: 0;
+    }
+    .menu ul li {
+        margin: 25px 0;
+    }
+    .menu ul li a {
+        text-decoration: none;
+        font-size: 22px;
+        font-weight: bold;
+        color: #000;
+    }
+    .menu ul li:first-child a {
+        display: inline-block;
+        background: #2d8a3d;
+        color: white;
+        padding: 12px 150px;
+        border-radius: 5px;
+    }
+    .menu u2 li:first-child a {
+        display: inline-block;
+        background: #2d8a3d;
+        color: white;
+        padding: 12px 150px;
+       border-radius: 5px;
+    }
+    .menu u2 li:first-child a {
+      display: inline-block;
+      background: #2d8a3d;
+      color: white;
+      padding: 12px 150px;
+      border-radius: 5px;
+    }
+    .menu u2 li:first-child a {
+      display: inline-block;
+      background: #2d8a3d;
+      color: white;
+      padding: 12px 150px;
+      border-radius: 5px;
+    }    
+</style>
+</head>
+<body>
+
+<!-- ปุ่ม 3 ขีด -->
+<button class="menu-toggle" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+</button>
+
+<!-- เมนู PopUp -->
+<div class="menu" id="menu">
+    <button class="close-btn" onclick="toggleMenu()">x</button>
+    <ul>
+        <li><a href="https://mongkol2010nk-dev.github.io/mongkol-wedsite/">หน้าแรก</a></li>
+    <ul>
+        <li><a href="https://anya.simdif.com">การจอง</a></li>
+    <ul>
+        <li><a href="gallery.html">แกลลอรี่</a></li>
+    <ul>
+        <li><a href="blog.html">บทความ</a></li>
+    <ul>
+        <li><a href="contact.html">ติดต่อเรา</a></li>
+        
+    </ul>
+</div>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("menu").classList.toggle("active");
+    }
+</script>
+
+</body>
+</html>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>หน้าแรก</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    /* Section พื้นหลัง */
+    .hero {
+        height: 100vh; /* เต็มจอ */
+        background: url('bg1.jpg') no-repeat center center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+        position: relative;
+    }
+
+    /* ทำให้สไลด์เปลี่ยนภาพ */
+    @keyframes slideBg {
+        0%   { background-image: url('https://mongkol20010.wordpress.com/wp-content/uploads/2025/08/1000006612-1.jpg?w=900'); }
+        33%  { background-image: url('https://mongkol20010.wordpress.com/wp-content/uploads/2025/08/1000006610-2.jpg?w=900'); }
+        66%  { background-image: url('https://mongkol20010.wordpress.com/wp-content/uploads/2025/08/1000006611-1.jpg?w=900'); }
+        100% { background-image: url('https://mongkol20010.wordpress.com/wp-content/uploads/2025/08/1756910446911.jpg?w=900'); }
+    }
+
+    .hero {
+        animation: slideBg 15s infinite;
+    }
+
+    /* ส่วนคอนเทนต์อื่น */
+    .content {
+        padding: 2px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<!-- พื้นหลังสไลด์ (หน้าหลัก) -->
+<section class="hero">
+    <div>
+        <h1>TAXI ON TOUR</h1>
+        <p>บริการรถเช่าพร้อมคนขับทั่วไทย
+        24ชั่วโมง</p>
+    </div>
+</section>
+
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สไลด์รถพร้อมเสียงเปียโน</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+    }
+    .slider {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 100vh;
+    }
+    .slides {
+      display: flex;
+      width: 300%; /* ถ้ามี 3 รูป */
+      height: 100%;
+      animation: slideAnim 15s infinite;
+    }
+    .slides img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @keyframes slideAnim {
+      0%   { transform: translateX(0%); }
+      33%  { transform: translateX(-100%); }
+      66%  { transform: translateX(-200%); }
+      100% { transform: translateX(0%); }
+    }
+    /* ปุ่มควบคุมเสียง */
+    .audio-control {
+      position: fixed;
+      bottom: 100px;
+      right: 5px;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="slider">
+    <div class="slides">
+      <img src="https://mongkol20010.wordpress.com/wp-content/uploads/2025/08/1000006612-1.jpg?w=1024" alt="รถ 1">
+      <img src="https://mongkol20010.wordpress.com/wp-content/uploads/2025/08/1000006610-2.jpg?w=1024" alt="รถ 2">
+      <img src="https://mongkol20010.wordpress.com/wp-content/uploads/2025/08/1000006611-1.jpg?w=1024" alt="รถ 3">
+    </div>
+  </div>
+
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Floating Button</title>
+  <style>
+    /* ปุ่มหลัก (กากบาท) */
+    .contact-float {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      z-index: 999;
+    }
+
+    .contact-float .main-btn {
+      width: 60px;
+      height: 60px;
+      background: #7e57c2; /* สีม่วง */
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 26px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+      transition: transform 0.3s ease;
+    }
+
+    .contact-float .main-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* ปุ่มย่อย */
+    .contact-float .sub-btns {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: all 0.3s ease;
+    }
+
+    .contact-float.active .sub-btns {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .contact-float .sub-btns a {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+      color: #fff;
+      font-size: 22px;
+      text-decoration: none;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+      transition: transform 0.2s;
+    }
+
+    .contact-float .sub-btns a:hover {
+      transform: scale(1.1);
+    }
+
+    /* สีปุ่มย่อย */
+    .phone-btn { background: #4caf50; }
+    .whatsapp-btn { background: #25D366; }
+    .line-btn { background: #06c755; }
+    .wechat-btn { background: #09b83e; }
+
+    /* แถบด้านล่าง (Footer Bar) */
+    .footer-contact {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      background: #fff;
+      border-top: 2px solid #ddd;
+      z-index: 998;
+    }
+
+    .footer-contact a {
+      flex: 1;
+      text-align: center;
+      padding: 10px 0;
+      color: #fff;
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    .footer-contact a i {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 22px;
+    }
+
+    .footer-line { background: #06c755; }
+    .footer-phone { background: #ff5722; }
+    .footer-fb { background: #1877f2; }
+  </style>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+<!-- เสียงประกอบคลาสสิก -->
+<audio id="bg-music" autoplay loop controls style="position:fixed; bottom:80px; right:110px; z-index:1000;">
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+  เบราว์เซอร์ของคุณไม่รองรับการเล่นเสียง
+</audio>
+  <!-- ปุ่ม Contact Us ลอย -->
+  <div class="contact-float" id="contactFloat">
+    <div class="sub-btns">
+      <!-- Phone -->
+      <a href="tel:+66636385818" class="phone-btn">
+        <i class="fas fa-phone-alt"></i>
+      </a>
+      <!-- WhatsApp -->
+      <a href="https://wa.me/+66636385818" target="_blank" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <!-- LINE -->
+      <a href="https://lin.ee/a4i6Ntc" target="_blank" class="line-btn">
+        <i class="fab fa-line"></i>
+      </a>
+      </a>
+    </div>
+    <div class="main-btn" onclick="toggleContact()">
+      <i class="fas fa-times"></i> <!-- กากบาท -->
+    </div>
+  </div>
+
+  <!-- Footer Contact Bar -->
+  <div class="footer-contact">
+    <a href="https://lin.ee/a4i6Ntc" target="_blank" class="footer-line">
+      <i class="fab fa-line"></i> LINE
+    </a>
+    <a href="tel:+6636385818" class="footer-phone">
+      <i class="fas fa-phone-alt"></i> โทร
+    </a>
+    <a href="https://www.facebook.com/share/1LtZAGBTPt/" target="_blank" class="footer-fb">
+      <i class="fab fa-facebook-f"></i> Facebook
+    </a>
+  </div>
+
+  <script>
+    functio
